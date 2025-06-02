@@ -11,7 +11,7 @@ def home():
         return render_template("success.html", user=session.get("user"))
     return render_template("form.html")
 
-# Login
+# Login Route
 @app.route('/submit', methods=["POST"])
 def submit():
     username = request.form.get("username")
@@ -22,6 +22,7 @@ def submit():
         return render_template("success.html", user = session.get("user"))
     return render_template('error.html')
 
+# Lgout Route
 @app.route('/logout')
 def logout():
     session.pop("user", None)

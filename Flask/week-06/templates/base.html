@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %} {% endblock %}</title>
+        <style>
+            header, footer { background-color: aqua; padding: 30px; margin: 20px; color: black; text-align: center;}
+            main { padding: 30px; margin: 30px;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>{% block headerTitle %}{% endblock %}</h1>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <h3>Blog Site</h3>
+        </footer>
+    </body>
+</html>

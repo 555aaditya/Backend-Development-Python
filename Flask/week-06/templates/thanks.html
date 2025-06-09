@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Thanks{% endblock %}
+{% block headerTitle %} Thanks for your Valuable Feedback {% endblock %}
+
+{% block content %} 
+<h3>Thank you {{ name }} for your feedback</h3>
+<blockquote>{{ feedback }}</blockquote>
+<a href="/">
+    <input type="button" value="Back to Feedback">
+</a>
+{% endblock %}
